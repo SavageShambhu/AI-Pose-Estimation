@@ -40,7 +40,7 @@ def check_feet_apart(landmarks, world_landmarks):
     print(f"[FEET DEBUG] ankle_gap={ankle_gap:.3f}  hip_width={hip_width:.3f}  ratio={ratio:.3f}")
 
     # Very loose thresholds — adjust after seeing debug output
-    RATIO_MIN = 0.05
+    RATIO_MIN = 1.0
     RATIO_MAX = 2.0
 
     ok = RATIO_MIN <= ratio <= RATIO_MAX
